@@ -139,7 +139,6 @@ function viewGrades() {
 // Save Grades
 function saveGrades() {
     const psikologi = document.getElementById('gradePsikologi').value;
-    const pesertaDidik = document.getElementById('gradePesertaDidik').value;
     const hifdzliHadist = document.getElementById('gradeHifdzliHadist').value;
     
     // Validate grades
@@ -148,7 +147,7 @@ function saveGrades() {
         return;
     }
     
-    if (psikologi < 0 || psikologi > 100 || pesertaDidik > 100 || hifdzliHadist < 0 || hifdzliHadist > 100) {
+    if (psikologi < 0 || psikologi > 100 || hifdzliHadist < 0 || hifdzliHadist > 100) {
         showAlert('Nilai harus antara 0 dan 100!', 'error');
         return;
     }
@@ -182,7 +181,6 @@ function loadSavedGrades() {
         if (grades.nim === '22121006') {
             setTimeout(() => {
                 document.getElementById('gradePsikologi').value = grades.psikologiPerkembangan || 0;
-                document.getElementById('gradePesertaDidik').value = grades.pesertaDidik || 0;
                 document.getElementById('gradeHifdzliHadist').value = grades.hifdzliHadist || 0;
             }, 100);
         }
