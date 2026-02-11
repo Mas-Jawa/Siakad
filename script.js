@@ -143,12 +143,12 @@ function saveGrades() {
     const hifdzliHadist = document.getElementById('gradeHifdzliHadist').value;
     
     // Validate grades
-    if (psikologi === '' || pesertaDidik === '' || hifdzliHadist === '') {
+    if (psikologi === '' || hifdzliHadist === '') {
         showAlert('Mohon lengkapi semua nilai!', 'error');
         return;
     }
     
-    if (psikologi < 0 || psikologi > 100 || pesertaDidik < 0 || pesertaDidik > 100 || hifdzliHadist < 0 || hifdzliHadist > 100) {
+    if (psikologi < 0 || psikologi > 100 || pesertaDidik > 100 || hifdzliHadist < 0 || hifdzliHadist > 100) {
         showAlert('Nilai harus antara 0 dan 100!', 'error');
         return;
     }
@@ -158,7 +158,6 @@ function saveGrades() {
         nim: '22121006',
         nama: 'Sandy Andesta Saputra',
         psikologiPerkembangan: psikologi,
-        pesertaDidik: pesertaDidik,
         hifdzliHadist: hifdzliHadist,
         lastUpdated: new Date().toISOString()
     };
