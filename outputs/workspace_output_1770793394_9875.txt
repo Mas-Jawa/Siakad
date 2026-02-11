@@ -1,0 +1,12 @@
+total 1376
+drwxr-xr-x  4 user user   4096 Feb 11 07:00 .
+drwxr-xr-x 20 root root   4096 Feb  6 01:46 ..
+drwxr-xr-x  4 user user   4096 Feb  4 22:06 .agent_hooks
+-rw-r--r--  1 root root 485613 Feb 11 05:24 IMG_1794.png
+-rw-r--r--  1 root root 431591 Feb 11 06:59 IMG_1805.png
+-rw-r--r--  1 root root 432741 Feb 11 06:59 Siakad.zip
+-rw-r--r--  1 root root  10741 Feb 11 07:00 index.html
+drwxr-xr-x  2 root root   4096 Feb 11 07:03 outputs
+-rw-r--r--  1 root root   7176 Feb 11 07:02 script.js
+-rw-r--r--  1 root root  10473 Feb 11 05:27 style.css
+-rw-r--r--  1 root root    792 Feb 11 05:40 todo.md
